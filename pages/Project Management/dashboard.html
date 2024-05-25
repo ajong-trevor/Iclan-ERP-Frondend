@@ -13,6 +13,7 @@
 
 <body>
 
+  <!-- Sidebar -->
   <div class="sidebar">
     <div class="logo-details">
       <svg class="icon" width="28" height="26" viewBox="0 0 28 26" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -28,7 +29,7 @@
     <ul class="nav-list">
       <li>
 
-        <a href="#">
+        <a href="dashboard.html">
           <div class="menu-item-indicator active-menu"></div>
           <div class="menu-item active-menu">
             <svg width="18" height="17" viewBox="0 0 18 17" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -42,7 +43,7 @@
       </li>
 
       <li>
-        <a href="#">
+        <a href="projects.html">
           <div class="menu-item-indicator"></div>
           <div class="menu-item">
             <svg width="18" height="17" viewBox="0 0 18 17" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -186,7 +187,9 @@
     </ul>
 
   </div>
+  <!-- End of sidebar -->
 
+  <!-- Main section -->
   <section class="home-section">
     <!-- Navigation ------------------------- -->
     <nav class="navbar">
@@ -381,7 +384,7 @@
       <!-- Project summary -->
       <div class="project-summary">
 
-        <div class="project-summary-header">
+        <div class="dashboard-card-header">
           <p>Project Summary</p>
 
           <div class="project-summary-dropdowns">
@@ -483,7 +486,7 @@
 
       <!-- Overall progress -->
       <div class="overall-progress">
-        <div class="project-summary-header">
+        <div class="dashboard-card-header">
           <p>Overall Progress</p>
           <select name="" id="" class="all-dropdown">
             <option value="">All</option>
@@ -495,13 +498,227 @@
 
         <!-- speedometer -->
 
+      </div>
+
+    </div>
+
+    <!-- Task section -->
+    <div class="task-section">
+
+      <!-- today task -->
+      <div class="today-task">
+        <div class="dashboard-card-header">
+          <p>Today task</p>
+        </div>
+        <div class="today-task-tabs">
+
+          <!-- Tabs -->
+          <ul class="today-task-header">
+
+            <!-- all tab -->
+            <li class="tablink" onclick="openTab(event, 'all')">
+              <p>
+                All <span>10</span>
+              </p>
+            </li>
+
+            <!-- important tab -->
+            <li class="tablink" id="defaultOpenedTab" onclick="openTab(event, 'important')">
+              <p>
+                Important
+              </p>
+            </li>
+
+            <!-- notes tab -->
+            <li class="tablink" onclick="openTab(event, 'notes')">
+              <p>
+                Notes <span>05</span>
+              </p>
+            </li>
+
+            <!-- links tab -->
+            <li class="tablink" onclick="openTab(event, 'links')">
+              <p>
+                Links <span>10</span>
+              </p>
+            </li>
+
+          </ul>
+
+          <!-- Contents -->
+
+          <!-- All tab content -->
+          <div class="tabcontent" id="all">
+            <h3>All</h3>
+            <p>Some random description under the heading </p>
+          </div>
+
+          <!-- Important tab content -->
+          <div class="tabcontent" id="important">
+
+            <div class="task">
+              <div class="task-description">
+                <input type="checkbox" name="" id="">
+                <p>Create a user flow of social application design</p>
+              </div>
+              <div class="task-status">
+                <div class="status completed">
+                  <p>Approved</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="task">
+              <div class="task-description">
+                <input type="checkbox" name="" id="">
+                <p>Create a user flow of social application design</p>
+              </div>
+              <div class="task-status">
+                <div class="status at-risk">
+                  <p>In review</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="task">
+              <div class="task-description">
+                <input type="checkbox" name="" id="">
+                <p>Landing page design for Fintech project of singapore</p>
+              </div>
+              <div class="task-status">
+                <div class="status at-risk">
+                  <p>In review</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="task">
+              <div class="task-description">
+                <input type="checkbox" name="" id="">
+                <p>Interactive prototype for app screens of deltamine project</p>
+              </div>
+              <div class="task-status">
+                <div class="status ongoing">
+                  <p>On going</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="task">
+              <div class="task-description">
+                <input type="checkbox" name="" id="">
+                <p>Interactive prototype for app screens of deltamine project</p>
+              </div>
+              <div class="task-status">
+                <div class="status completed">
+                  <p>Approved</p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Notes tab content -->
+          <div class="tabcontent" id="notes">
+            <h3>Notes</h3>
+            <p>Some random description under the heading </p>
+          </div>
+
+          <!-- Links tab content -->
+          <div class="tabcontent" id="links">
+            <h3>Links</h3>
+            <p>Some random description under the heading </p>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- project workload -->
+      <div class="project-workload">
+
+        <div class="dashboard-card-header">
+          <p>Projects Workload</p>
+          <select name="" id="" class="workload-dropdown">
+            <option value="">Last 3 months</option>
+            <option value="">Last 6 months</option>
+            <option value="">Last 9 months</option>
+            <option value="">Last year</option>
+          </select>
+        </div>
+
+        <div class="workload-wrapper">
+          <div class="workload-indicators">
+            <div class="workload-indicator workload-counter">
+              <p>07</p>
+            </div>
+            <div class="workload-indicator"></div>
+            <div class="workload-indicator"></div>
+            <p>Sam</p>
+          </div>
+          <div class="workload-indicators">
+            <div class="workload-indicator workload-counter">
+              <p>08</p>
+            </div>
+            <div class="workload-indicator"></div>
+            <div class="workload-indicator"></div>
+            <div class="workload-indicator"></div>
+            <p>Meldy</p>
+          </div>
+          <div class="workload-indicators">
+            <div class="workload-indicator workload-counter">
+              <p>02</p>
+            </div>
+            <p>Ken</p>
+          </div>
+          <div class="workload-indicators">
+            <div class="workload-indicator workload-counter high-count">
+              <p>10</p>
+            </div>
+            <div class="workload-indicator"></div>
+            <div class="workload-indicator"></div>
+            <div class="workload-indicator"></div>
+            <div class="workload-indicator"></div>
+            <div class="workload-indicator"></div>
+            <p>Dmitry</p>
+          </div>
+          <div class="workload-indicators">
+            <div class="workload-indicator workload-counter">
+              <p>08</p>
+            </div>
+            <div class="workload-indicator"></div>
+            <div class="workload-indicator"></div>
+            <div class="workload-indicator"></div>
+            <p>Vego</p>
+          </div>
+          <div class="workload-indicators">
+            <div class="workload-indicator workload-counter">
+              <p>02</p>
+            </div>
+            <p>Kadin</p>
+          </div>
+          <div class="workload-indicators">
+            <div class="workload-indicator workload-counter">
+              <p>04</p>
+            </div>
+            <div class="workload-indicator"></div>
+            <p>Melm</p>
+          </div>
+        </div>
 
       </div>
+      <!-- End of project workload -->
+
+
     </div>
 
   </section>
+  <!-- End of main section -->
 
   <script src="../../dist/js/dasboard.js"></script>
+  <script>
+    document.getElementById('defaultOpenedTab').click();
+  </script>
+
 </body>
 
 </html>
