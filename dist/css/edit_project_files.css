@@ -1,0 +1,74 @@
+/* Styles for Files tab in edit  project page */
+
+/* *********Font face declaration ***********/
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../../assets/fonts/Montserrat/Montserrat-VariableFont_wght.ttf') format('ttf-variations');
+    src: url('../../assets/fonts/Montserrat/Montserrat-VariableFont_wght.ttf') format('truetype');
+    font-weight: 100 1000;
+    font-stretch: 25% 151%;
+}
+
+@font-face {
+    font-family: 'DMSans';
+    src: url('../../assets/fonts/DMSans-VariableFont_opsz\,wght.ttf') format('ttf-variations');
+    src: url('../../assets/fonts/DMSans-VariableFont_opsz\,wght.ttf') format('truetype');
+    font-weight: 100 1000;
+    font-stretch: 25% 151%;
+}
+
+:root {
+    --textColor: #26252B;
+    --folderBackgroundColor: #F1F0EC;
+    --lighterfolderBG: #E8E7E3;
+    --darkYellow: #B17908;
+    --yellow: #EFA510;
+}
+
+
+/********** Files Section Styles ************/
+.files-section-content{
+    background-color: var(--folderBackgroundColor);
+    width: 100%;
+    height: auto !important;
+    padding: 10px;
+     border-radius: 18px;
+}
+
+.top-section{
+    display: flex;
+    gap: 20px;
+    margin-top: 40px;
+}
+
+.project-files{
+    font-family: 'Montserrat';
+    font-weight: 700;
+    align-items: center;
+    display: flex;
+    gap: 10px;
+}
+
+.files-header-line{
+    width: 10rem !important;
+    height: 1px !important;
+    background-color: #000000;
+}
+
+.files-add-icon {
+    background-color: var(--yellow);
+    padding: 4px 8px;
+    border-radius: 4px;
+}
+
+.folder-top{
+    background-color: var(--lighterfolderBG) !important;
+}
+
+.folder-top:before{
+    border-left: 40px solid var(--lighterfolderBG) !important;
+}
+
+.folder-body{
+    background-color: var(--lighterfolderBG) !important;
+}
